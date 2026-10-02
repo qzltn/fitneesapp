@@ -1,17 +1,16 @@
-import React from 'react'
 import { Outlet } from "react-router";
-const Layout = () => {
+import Sidebar from "./Sidebar";
+
+function Layout() {
   return (
-    <div>
-    <header>
-        <h1>Fitness App</h1>
-         </header>
-<main>
-    <Outlet />
-</main>
-</div>
-   
-  )
+    <div className="min-h-screen bg-[#06163D]">
+      <Sidebar />
+
+      <main className="ml-64 min-h-screen">
+        <Outlet />
+      </main>
+    </div>
+  );
 }
 
-export default Layout
+export default Layout;
