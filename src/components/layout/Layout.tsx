@@ -3,7 +3,7 @@ import Sidebar from "./Sidebar";
 
 function Layout() {
   return (
-    <div className="min-h-screen bg-[#06163D]">
+    <div className="min-h-screen bg-[#020618]">
       <Sidebar />
 
       <main className="ml-64 min-h-screen">
